@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* font-weight: bold; */
+  color: #fff;
+}
+
+/* main section */
+main {
+  min-height: 906px;
+  background: #1A1A1C;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* search container */
+.search-container-top {
+  flex: 1;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input-container {
+  flex: 4;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 88vw;
+  gap: 10px;
+}
+
+#search-input {
+  /* width: 900px; */
+  flex: 2;
+  padding: 0.7rem;
+  border: 1px solid #8E8E8E;
+  outline: none;
+  background: #1A1A1C;
+  color: #fff;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+
+/* filters container */
+.filter {
+  background-color: #1A1A1C;
+  border: 1px solid #8E8E8E;
+  color: #ffffff;
+  width: 170px;
+  font-weight: 400px;
+  padding-block: 0.3rem;
+  line-height: 29px;
+  letter-spacing: 0em;
+  outline: none;
+  font-size: 16px;
+}
+
+.filter:hover {
+  cursor: pointer;
+}
+
+/* table container */
+.table-container-bottom {
+  margin-top: 2rem;
+  flex: 10;
+  /* width: 1280px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: 400px;
+  font-size: 18px;
+}
+
+.green {
+  color: #8ee27b;
+}
+
+.red {
+  color: #e63f36;
+}
+
+table {
+  width: 100%;
+  /* border: 1px solid; */
+  border-collapse: collapse;
+  margin-bottom: 3rem ;
+  color: #fff;
+  font-weight: 100;
+}
+
+tr,
+th,
+td {
+  border-bottom: 1px solid #868484;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 18px;
+  min-width: 10rem;
+}
+
+th {
+  /* text-align: left; */
+}
+
+th:first-child,
+tr > td:first-child {
+  /* text-align: center; */
+}
+
+/* th:nth-child(2),
+tr > td:nth-child(2) {
+  width: 25rem;
+} */
+
+td div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+td div img {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  margin-inline-end: 10px;
+}
+
+th:last-child,
+tr > td:last-child {
+  width: 20rem;
+}
